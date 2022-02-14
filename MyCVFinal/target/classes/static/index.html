@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Cv Application</title>
+  </head>
+  <body>
+    <header>
+      <h1>Zino CV</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/examples">See examples</a>
+        <a href="/profile">My profile</a>
+        <a href="/superPowers">My Superpowers</a>
+      </nav>
+    </header>
+    <main>
+      <form method="get" action="/contact">
+        <div>
+          <label>Enter your name</label>
+          <input type="text" name="userName">
+        </div>
+        <div>
+          <label>Enter your email</label>
+          <input type="email" name="emailAddress">
+        </div>
+        <div>
+          <label>Choose an option</label>
+          <select name="messageType">
+            <option>Enquiry</option>
+            <option>Job offer</option>
+            <option>Suggestions</option>
+            <option>Complaints</option>
+          </select>
+        </div>
+        <div>
+          <label>Type your message</label>
+          <textarea name="message"></textarea>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <footer>
+
+  </footer>
+</html>

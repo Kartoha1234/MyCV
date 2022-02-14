@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Super_powers</title>
+</head>
+<body>
+<header>
+    <h1>Kristina CV</h1>
+    <nav>
+        <a href = "/">Home</a>
+        <a href = "examples.html">See examples</a>
+        <a href = "profile.html">My Profile</a>
+        <a href = "education.html">My Education</a>
+        <a href="super_powers.html">My Superpowers</a>
+        <a href = "work_related_skills.html">My work related skills</a>
+        <a href="languages.html">Languages</a>
+    </nav>
+</header>
+<main>
+    <h3>My Super powers:</h3>
+    <section>
+        <ul>
+            <li th:each="superpower: ${superPowers}">
+                <label th:text="${superpower}">Walking</label>
+            <li th:each="superpower: ${superPowers}">
+                <label th:text="${superpower}">Sleeping</label>
+            <li th:each="superpower: ${superPowers}">
+                <label th:text="${superpower}">Eating</label>
+            <li th:each="superpower: ${superPowers}">
+                <label th:text="${superpower}">Talking</label>
+            </li>
+        </ul>
+    </section>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+   body {
+        background: url(https://cutewallpaper.org/21/tumblr-plain-backgrounds/Light-Pink-Glitter-Background-For-Iphone-Flower-Design-.jpg) no-repeat;
+    background-size: 100%;
+     </style>
+    </head>
+    <body>
+    </body>
+    </html>
+</main>
+</body>
+</html>

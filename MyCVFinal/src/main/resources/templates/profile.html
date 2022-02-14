@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+</head>
+<body>
+  <header>
+    <h1>Kristina CV</h1>
+    <nav>
+      <a href = "/">Home</a>
+      <a href = "examples.html">See examples</a>
+      <a href = "profile.html">My Profile</a>
+      <a href = "education.html">My Education</a>
+      <a href="super_powers.html">My Superpowers</a>
+      <a href = "work_related_skills.html">My work related skills</a>
+      <a href="languages.html">Languages</a>
+    </nav>
+  </header>
+  <main>
+    <h3>My Profile</h3>
+    <section>
+      <div>
+        <span><b>Name: </b></span>
+        <span th:text="${userName}">Kristina</span>
+      </div>
+      <div>
+        <span><b>Location: </b></span>
+        <span th:text="${location}">Riga</span>
+      </div>
+      <div>
+        <span><b>Age: </b></span>
+        <span th:text="${age}">24</span>
+      </div>
+      <div>
+        <h4>My Pet:</h4>
+        <p>
+          <div>
+            <span>Name: </span>
+            <span style="text-transform: capitalize" th:text="${myPet.getName()}">Biskis</span>
+          </div>
+          <div>
+            <span>Age: </span>
+            <span th:text="${myPet.getAge()}">1 year</span>
+          </div>
+          <div>
+            <span>Type: </span>
+            <span th:text="${#strings.toLowerCase(myPet.getType())}">Cat</span>
+          </div>
+        </p>
+      </div>
+      <div>
+        <h4>Hobbies:</h4>
+        <ol type="I">
+          <li th:each="hobby: ${myHobbies}">
+            <span th:text="${hobby.getName()}">Reading</span>
+          </li>
+          <li th:each="hobby: ${myHobbies}">
+            <span th:text="${hobby.getName()}">Dancing</span>
+          <li th:each="hobby: ${myHobbies}">
+            <span th:text="${hobby.getName()}">Prepare food</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+   body {
+          background: url(https://cutewallpaper.org/21/tumblr-plain-backgrounds/Light-Pink-Glitter-Background-For-Iphone-Flower-Design-.jpg) no-repeat;
+    background-size: 100%;
+     </style>
+  </head>
+  <body>
+  </body>
+  </html>
+</body>
+</html>
